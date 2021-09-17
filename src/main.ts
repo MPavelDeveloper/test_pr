@@ -8,5 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
+// add data in app
+import { data } from './data/users'
+localStorage.setItem('json', data)
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
