@@ -1,4 +1,6 @@
-export class User {
+
+
+export class User{
   id: string;
   name: string;
   age: number;
@@ -8,4 +10,9 @@ export class User {
     this.name = name;
     this.age = age;
   }
+
+  // [Symbol.iterator](): Iterator<string> {
+  //   next(): Iterator<string>
+  //   throw new Error('Err')
+  // }
 }
